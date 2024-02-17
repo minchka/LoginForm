@@ -9,45 +9,55 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    
     <div class="register">
         <h1>Register</h1>
         <div class="ime">
-                <input type="text" placeholder="Name"
-                required>
+                <input id="ime" type="text" placeholder="Name" name="ime" type="text"
+                required onblur="blur()">
                 <i class='bx bxs-user'></i>
+                <span id="textime"></span>
         </div>
         <div class="prezime">
-            <input type="text" placeholder="Surname"
-                required>
+            <input id="prezime" type="text" placeholder="Surname" name="prezime" type="text"
+                required onblur="blur()">
                 <i class='bx bxs-user'></i>
+                <span id="textprezime"></span>
         </div>
         <div class="email">
-            <input type="email" placeholder="Enter your email"
+            <input id="email" type="email" placeholder="Enter your email" name="email" type="text"
                 required>
                 <i class='bx bx-envelope' ></i>
-        </div>
-        <div class="confirm-email">
-            <input type="email" placeholder="Confirm your email"
-                required>
-                <i class='bx bx-envelope' ></i>
-        </div>
-        <div class="password">
-            <input type="password" placeholder="Enter your password"
-                required>
-                <i class='bx bxs-lock-alt' ></i>
-        </div>
-        <div class="confirm-password">
-            <input type="password" placeholder="Confirm your password"
-                required>
-                <i class='bx bxs-lock-alt' ></i>
-        </div>
-        <div class="phone-number">
-            <input type="tel" placeholder="Enter your phone number">
-            <i class='bx bx-dialpad'></i>
+                <span id="email1"></span>
         </div>
         
-        <button type="submit" class="btn">Sign Up</button>
+        <div class="confirm-email">
+            <input id="confirm-email" type="email" placeholder="Confirm your email" name="confirm"  required>
+                <i class='bx bx-envelope' ></i>
+                <span id="email2"></span>
+        </div>
+        <div class="password">
+            <input id="password" type="password" placeholder="Enter your password"
+                required>
+                <i class='bx bxs-lock-alt' ></i>
+                <span id="textpassword"></span>
+        </div>
+        <div class="confirm-password">
+            <input id="confirm-password" type="password" placeholder="Confirm your password"
+                required>
+                <i class='bx bxs-lock-alt' ></i>
+                <span id="textconfirmpassword"></span>
+        </div>
+        <div class="phone-number">
+            <input id="phonenumber" type="tel" placeholder="Enter your phone number">
+            <i class='bx bx-dialpad'></i>
+            <span id="textphonenumber"></span>
+        </div>
     
+        <button onclick="button()" type="submit" class="btn">Sign Up</button>
+       
     </div>
+    <script defer src="newaccount.js"></script>
 </body>
 </html>
+
